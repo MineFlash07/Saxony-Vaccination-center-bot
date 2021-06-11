@@ -130,3 +130,7 @@ dmypy.json
 
 #Web driver
 driver/
+
+# Jet Brains
+.idea/
+*.iml
