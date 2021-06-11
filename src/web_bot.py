@@ -47,7 +47,7 @@ class WebBot:
         self._driver.find_element_by_xpath("/html/body/div[3]/div/main/div/div[2]/div[4]/button").click()
 
         # Check failed login
-        time.sleep(3)
+        time.sleep(5)
         try:
             if "Ihre Zugangsdaten sind nicht korrekt. Bitte überprüfen Sie Ihre Eingabe." in self._driver.\
                     find_element_by_xpath("/html/body/div[3]/div/main/div/div[2]/div[3]/div/div").text:
@@ -117,7 +117,7 @@ class WebBot:
         self._driver.find_element_by_xpath("/html/body/div[3]/div/main/div/div[2]/div[4]/button[2]").click()
 
         # Check if it worked or now waiting few seconds for loading
-        time.sleep(3)
+        time.sleep(5)
         try:
             if "Aufgrund der aktuellen Auslastung der Impfzentren und der verfügbaren Impfstoffmenge können wir Ihnen "\
                "leider keinen Termin anbieten. Bitte versuchen Sie es in ein paar Tagen erneut." not in \
